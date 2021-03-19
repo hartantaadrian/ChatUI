@@ -10,20 +10,29 @@
         </div>
       </ol>
     </div>
-    <div class="messageContainer px-5">
-      <input
-        type="text"
-        id="messageBox"
-        placeholder="Type here"
-        style="width: 100%;margin-bottom: 10px;padding: 10px;"
-        v-model="messageBox"
-      />
-      <button
-        id="send"
-        title="Send"
-        style="width:100%;height:30px"
-        @click="sendMessage"
-      >Send</button>
+    <div class="messageContainer px-5 pb-5">
+      <b-form @submit="sendMessage">
+        <b-form-group id="input-group-2">
+          <b-input-group class>
+            <b-form-input
+              type="text"
+              id="messageBox"
+              placeholder="Type here"
+              class="py-4"
+              v-model="messageBox"
+            ></b-form-input>
+          </b-input-group>
+        </b-form-group>
+        <b-button
+          id="send"
+          class=""
+          type="submit"
+          variant="danger"
+          size="lg"
+          style="width:100%"
+        >Send Message</b-button>
+      </b-form>
+
     </div>
   </div>
 </template>
