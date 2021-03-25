@@ -9,7 +9,7 @@
         variant="danger"
       >{{ this.errMsg }}</b-alert>
     </div>
-    <div class="container py-5">
+    <div class="container py-5 mt-5">
       <div class="row">
         <div class="card py-5 col-md-12 mx-sm-auto mx-md-0 ">
           <div class="login-profile-container ">

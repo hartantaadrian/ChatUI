@@ -64,7 +64,7 @@ export default {
   },
 
   created: function () {
-    this.ws = new WebSocket("ws://192.168.0.7:3434");
+    this.ws = new WebSocket("ws://localhost:3434");
 
     this.ws.onopen = () => {
       console.log("Connection Open");
